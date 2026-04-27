@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Contact Us | Admissions</title>
     <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/general.css">
 </head>
 <body>
     <header>
@@ -21,27 +22,29 @@
 
     <main>
         <h2>Student Registration Form</h2>
-        <form action="#" method="POST" class="registration-form">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="fname">Student's Full Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter name..." required><br><br>
+        <div class="form-wrapper">
             
-                <div class="form-group">
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" name="dob"></div>
+            <form action="#" method="POST" class="registration-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">Student's Full Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter name..." required><br><br>
+            
+                    <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob"></div>
 
-                <div class="form-group">
-                <label for="email">Contact Email Address</label>
-                <input type="email" id="email" name="email"></div>
-            </fieldset>
+                    <div class="form-group">
+                    <label for="email">Contact Email Address</label>
+                    <input type="email" id="email" name="email"></div>
+                </fieldset>
             
             <fieldset>
-            <legend>Academic Information</legend>
+                <legend>Academic Information</legend>
             
-            <div class="form-group">
-                <label for="entry-level">Applying for Level:</label>
-                <select id="entry-level" name="entry_level">
+                <div class="form-group">
+                    <label for="entry-level">Applying for Level:</label>
+                    <select id="entry-level" name="entry_level">
                     <option value="" disabled selected>Select Level</option>
                     <option value="O-level">O-Level (S.1 - S.4)</option>
                     <option value="A-level">A-Level (S.5 - S.6)</option>
@@ -60,17 +63,17 @@
         </fieldset>
 
            <fieldset>
-            <legend>Parent/Guardian Details</legend>
+                <legend>Parent/Guardian Details</legend>
             
-            <div class="form-group">
-                <label for="guardian-name">Parent/Guardian Name</label>
-                <input type="text" id="guardian-name" name="guardian_name" >
-            </div>
+                <div class="form-group">
+                    <label for="guardian-name">Parent/Guardian Name</label>
+                    <input type="text" id="guardian-name" name="guardian_name" >
+                </div>
 
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="e.g. +256700000000" >
-            </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +256700000000" >
+                </div>
         </fieldset>
 
 
@@ -78,6 +81,8 @@
             <button type="submit">Submit Form</button>
         </div>
         </form>
+        </div>
+        
     </main>
 </body>
 </html>

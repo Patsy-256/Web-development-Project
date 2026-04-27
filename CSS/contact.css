@@ -1,8 +1,19 @@
-.nav{
-    display: flex ;
-    gap: 100px;
+.form-wrapper {
+    display:flex;
+    justify-content: center; 
     align-items: center;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
+}
+h2{
+    text-align: center;
+    font-family: "Cinzel", serif;
+    margin-top: 2px;
+}
+.registration-form {
+  width: 420px;           
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  
 }
