@@ -48,3 +48,11 @@ body {
   background: var(--brand);
   color: #fff;
 }
+
+footer {
+  margin-top:1px;
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  border-top: 1px solid #e6e1d3;
+}

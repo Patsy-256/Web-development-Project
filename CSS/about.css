@@ -6,3 +6,38 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size:20px;
 }
+
+.card-container{
+    box-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    
+}
+
+.cards{
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    margin: 10px;
+    margin-left:60px;
+    background-color:rgba(255, 255, 255);  
+}
+
+h2{
+    border-bottom: 3px solid green;
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+p{
+    font-size:20px;
+    font-family:'Brush Script MT', cursive ;
+}
+main{
+    background: url(../IMAGES/aboutPage.webp) center/cover no-repeat  ;
+}

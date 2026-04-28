@@ -7,7 +7,9 @@ header {
 
 .header {
   min-height: 35vh;
-  background:url(../IMAGES/namilyango_college_cover.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(97, 111, 131, 0.45), rgba(0, 16, 49, 0.45)),
+    url(../IMAGES/namilyango_college_cover.jpeg) center/cover no-repeat;
+  
 }
 
 
