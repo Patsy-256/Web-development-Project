@@ -11,41 +11,73 @@
 
 * { box-sizing: border-box; }
 
+html,
 body {
   margin: 0;
-  font-family: "Lora", Georgia, serif;
-  background: radial-gradient(circle at top right, #ffffff 0%, var(--bg) 55%);
-  color: var(--ink);
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: #f9fbff;
 }
 
-.nav {
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+.site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  background: rgba(20, 88, 42, 0.93);
+  backdrop-filter: blur(6px);
+}
+
+.nav-wrap {
+  min-height: 74px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+
+.brand h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.brand p {
+  margin: 0.1rem 0 0;
+  color: #c8d4f0;
+  font-size: 0.78rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: .5rem;
-  padding: .75rem 1rem;
-  background: rgba(255, 255, 255, .92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e6e1d3;
 }
 
-.nav a {
+.main-nav a {
+  color: #dbe6ff;
   text-decoration: none;
-  color: var(--brand);
-  font-family: "Montserrat", Arial, sans-serif;
   font-weight: 600;
-  font-size: 15px;
-  padding: 10px 10px;
-  border-radius: 25px;
-  transition: .2s ease;
+  font-size: 0.92rem;
 }
 
-
-.nav a:hover {
-  background: var(--brand);
+.main-nav a:hover {
   color: #fff;
 }
 
