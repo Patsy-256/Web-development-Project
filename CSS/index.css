@@ -89,7 +89,7 @@ img {
   min-height: 72vh;
   display: grid;
   align-items: center;
-  background: linear-gradient(rgba(20, 88, 42, 0.5), rgba(20, 88, 42, 0.68)),
+  background: linear-gradient(rgba(20, 88, 42, 0.3), rgba(20, 88, 42, 0.45)),
     url("../IMAGES/namilyango_college_cover.jpeg") center/cover no-repeat;
 }
 
