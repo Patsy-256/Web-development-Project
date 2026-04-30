@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Admissions</title>
     <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="../CSS/general.css">
@@ -33,7 +34,7 @@
                 <fieldset>
                     <legend>Personal Information</legend>
                     <label for="fname">Student's Full Name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter name..." required><br><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter name..." required>
             
                     <div class="form-group">
                     <label for="dob">Date of Birth</label>
@@ -41,7 +42,7 @@
 
                     <div class="form-group">
                     <label for="email">Contact Email Address</label>
-                    <input type="email" id="email" name="email"></div>
+                    <input type="email" id="email" name="email" placeholder="example@email.com"></div>
                 </fieldset>
             
             <fieldset>
@@ -56,9 +57,31 @@
                 </select>
             </div>
 
+            <!-- A-Level Combination (hidden by default, shown when A-Level is selected) -->
+            <div class="form-group a-level-field" style="display: none;">
+                <label for="a-level-combo">A-Level Combination:</label>
+                <select id="a-level-combo" name="a_level_combo">
+                    <option value="" disabled selected>Select Combination</option>
+                    <option value="PCM">PCM (Physics, Chemistry, Math)</option>
+                    <option value="PCB">PCB (Physics, Chemistry, Biology)</option>
+                    <option value="BCM">BCM (Biology, Chemistry, Math)</option>
+                    <option value="CEG">CEG (Chemistry, Economics, Geography)</option>
+                    <option value="HEG">HEG (History, Economics, Geography)</option>
+                    <option value="HGL">HGL (History, Geography, Literature)</option>
+                    <option value="EMs">EMs (Economics, Mathematics, Statistics)</option>
+                    <option value="Other">Other (Specify below)</option>
+                </select>
+            </div>
+
+            <!-- Other combination text field -->
+            <div class="form-group a-level-field" style="display: none;">
+                <label for="other-combo">Specify Other Combination:</label>
+                <input type="text" id="other-combo" name="other_combo" placeholder="Enter your combination">
+            </div>
+
             <div class="form-group">
                 <label for="previous-school">Previous School Attended</label>
-                <input type="text" id="previous-school" name="previous_school">
+                <input type="text" id="previous-school" name="previous_school" placeholder="Enter school name">
             </div>
 
             <div class="form-group">
@@ -72,12 +95,17 @@
             
                 <div class="form-group">
                     <label for="guardian-name">Parent/Guardian Name</label>
-                    <input type="text" id="guardian-name" name="guardian_name" >
+                    <input type="text" id="guardian-name" name="guardian_name" placeholder="Enter guardian name">
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g. +256700000000" >
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +256700000000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="guardian-email">Guardian Email Address</label>
+                    <input type="email" id="guardian-email" name="guardian_email" placeholder="example@email.com">
                 </div>
         </fieldset>
 
@@ -88,6 +116,31 @@
         </form>
         </div>
         
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>Address</h4>
+                    <p>Namilyango College<br>Seeta, Mukono District<br>P.O. Box 72, Mukono, Uganda</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>+256 312 350 800<br>+256 702 000 000</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>info@namilyangocollege.ac.ug<br>admissions@namilyango<br>college.ac.ug</p>
+                </div>
+            </div>
+        </section>
+        
     </main>
+
+    <footer class="site-footer">
+        <p class="copyright">&copy; 2026 Namilyango College. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/contact.js"></script>
 </body>
 </html>
