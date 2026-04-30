@@ -7,26 +7,145 @@
     <link rel="stylesheet" href="../CSS/general.css">
 </head>
 <body>
-    <header>
-        <h1>COLLEGE LIFE & MOMENTS</h1>
-        <nav class="nav">
-            
-                <a href="index.html">Home page</a>
-                <a href="about.html">About page</a>
-                <a href="academics.html">Academics page</a>
-                <a href="gallery.html">Gallery page</a>
-                <a href="contact.html">Contacts page</a>
-            
+    <header class="site-header">
+            <div class="container nav-wrap">
+        <div class="brand">
+          <div>
+            <h1>NAMILYANGO COLLEGE</h1>
+            <p>NISI DOMINUS</p>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
         </nav>
+      </div>
+        </header>
     </header>
 
     <main>
-        <h2>The "Eagle Spirit" in Action</h2>
-        <div class="gallery">
-            <p>Rugby Match Day</p>
-            <p>MDD Competitions</p>
-            <p>Academic Conferences</p>
+      <div class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">College Gallery</p>
+          <h1>Explore Our School Memories</h1>
+          <p>Traverse through a the vibrant culture, academic achievements, and sportmanship that define our College.</p>
+          </div>
+      </div>
+      <section class="gallery-overview">
+        <h2>OUR GALLERY</h2>
+        <div class="gallery-grid">
+          <a href="#sports" class="gallery-card">
+            <img src="./pics/namilyango-college-starting-xi-QF-SL.jpeg" alt="Sports gallery" />
+            <div class="card-text">
+              <h3>Sports</h3>
+              <p>Action-packed school sports events and championships.</p>
+            </div>
+          </a>
+          <a href="#ngo" class="gallery-card">
+            <img src="https://via.placeholder.com/480x320/009900/ffffff?text=NGO+Day" alt="NGO Day gallery" />
+            <div class="card-text">
+              <h3>NGO Day Celebration</h3>
+              <p>Community outreach and celebration of NGO Day.</p>
+            </div>
+          </a>
+          <a href="#old-boys" class="gallery-card">
+            <img src="https://via.placeholder.com/480x320/ffffff/000000?text=Old+Boys" alt="Old Boys Association gallery" />
+            <div class="card-text">
+              <h3>Old Boys Association</h3>
+              <p>Alumni gatherings, reunions, and legacy stories.</p>
+            </div>
+          </a>
+          <a href="#mdd" class="gallery-card">
+            <img src="https://via.placeholder.com/480x320/cc0000/ffffff?text=MDD" alt="MDD gallery" />
+            <div class="card-text">
+              <h3>MDD</h3>
+              <p>School science and technology showcases.</p>
+            </div>
+          </a>
+          <a href="#trips" class="gallery-card">
+            <img src="https://via.placeholder.com/480x320/009900/ffffff?text=Trips" alt="Trips gallery" />
+            <div class="card-text">
+              <h3>Trips</h3>
+              <p>Field trips, excursions, and learning adventures.</p>
+            </div>
+          </a>
         </div>
+      </section>
+
+      <section id="sports" class="sub-gallery">
+        <h2>Sports Gallery</h2>
+        <p>Photos of school teams, tournaments, and athletic spirit.</p>
+        <div class="sub-grid">
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+        </div>
+      </section>
+
+      <section id="ngo" class="sub-gallery">
+        <h2>NGO Day Celebration</h2>
+        <p>Images from our NGO outreach programs and celebrations.</p>
+        <div class="sub-grid">
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+        </div>
+      </section>
+
+      <section id="old-boys" class="sub-gallery">
+        <h2>Old Boys Association</h2>
+        <p>Snapshots from alumni events and association activities.</p>
+        <div class="sub-grid">
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+        </div>
+      </section>
+
+      <section id="mdd" class="sub-gallery">
+        <h2>MDD</h2>
+        <p>Memorable moments from MDD events and school exhibitions.</p>
+        <div class="sub-grid">
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+        </div>
+      </section>
+
+      <section id="trips" class="sub-gallery">
+        <h2>Trips</h2>
+        <p>Excursions, field trips, and learning journeys captured in photos.</p>
+        <div class="sub-grid">
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+          <div class="sub-card"></div>
+        </div>
+      </section>
+  
+
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">▲</button>
+
+    <script>
+      const backToTopBtn = document.getElementById('backToTopBtn');
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopBtn.classList.add('show');
+        } else {
+          backToTopBtn.classList.remove('show');
+       }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
     </main>
 </body>
 </html>
