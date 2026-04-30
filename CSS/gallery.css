@@ -210,15 +210,24 @@ body {
 
 .sub-grid {
   display: grid;
-  gap: 1rem;
+  gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .sub-card {
-  min-height: 200px;
-  border-radius: 18px;
+  min-height: 180px;
+  border-radius: 8px;
   background: linear-gradient(135deg, rgba(193, 42, 42, 0.16), rgba(36, 122, 63, 0.16));
+  overflow: hidden;
   border: 1px solid rgba(36, 122, 63, 0.12);
+  position: relative;
+}
+
+.sub-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 @media (max-width: 640px) {
