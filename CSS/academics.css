@@ -76,6 +76,8 @@ main{
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
 }
  
 
@@ -84,6 +86,16 @@ main{
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(13, 37, 69, 0.13);
   border-color: rgba(196,154,42,0.45);
+}
+
+.card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.features .card:last-child {
+  justify-self: center;
 }
  
 
@@ -127,6 +139,15 @@ main{
   color: #5A5045;
   padding: 0.3rem 0 0.3rem 1.4rem;
   position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
  
 

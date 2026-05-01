@@ -51,6 +51,16 @@ img {
   align-items: center;
 }
 
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+  flex-shrink: 0;
+}
+
 
 .brand h1 {
   margin: 0;
@@ -81,10 +91,66 @@ img {
   color: #fff;
 }
 
-footer {
-  margin-top:1px;
+.main-nav a.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+}
+
+footer,
+.site-footer {
+  margin-top: 1px;
   text-align: center;
   padding: 1rem;
   color: var(--muted);
   border-top: 1px solid #e6e1d3;
+}
+
+@media (max-width: 768px) {
+  .nav-wrap {
+    min-height: 68px;
+    gap: 0.7rem;
+  }
+
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0;
+  }
+
+  .main-nav {
+    gap: 0.6rem;
+  }
+
+  .main-nav a {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand h1 {
+    font-size: 0.88rem;
+  }
+
+  .brand p {
+    font-size: 0.68rem;
+  }
+
+  .copyright {
+    font-size: 0.82rem;
+  }
 }
