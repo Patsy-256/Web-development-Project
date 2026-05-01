@@ -58,7 +58,7 @@
             </div>
 
             <!-- A-Level Combination (hidden by default, shown when A-Level is selected) -->
-            <div class="form-group a-level-field" style="display: none;">
+            <div class="form-group a-level-field" id="a-level-combo-group" style="display: none;">
                 <label for="a-level-combo">A-Level Combination:</label>
                 <select id="a-level-combo" name="a_level_combo">
                     <option value="" disabled selected>Select Combination</option>
@@ -69,12 +69,12 @@
                     <option value="HEG">HEG (History, Economics, Geography)</option>
                     <option value="HGL">HGL (History, Geography, Literature)</option>
                     <option value="EMs">EMs (Economics, Mathematics, Statistics)</option>
-                    <option value="Other">Other (Specify below)</option>
+                    <option value="other">Other (Specify below)</option>
                 </select>
             </div>
 
             <!-- Other combination text field -->
-            <div class="form-group a-level-field" style="display: none;">
+            <div class="form-group a-level-field" id="other-combo-group" style="display: none;">
                 <label for="other-combo">Specify Other Combination:</label>
                 <input type="text" id="other-combo" name="other_combo" placeholder="Enter your combination">
             </div>
@@ -121,17 +121,26 @@
             <h3>Contact Us</h3>
             <div class="contact-grid">
                 <div class="contact-item">
-                    <h4>Address</h4>
+                    <h4><span class="contact-icon" aria-hidden="true">📍</span>Address</h4>
                     <p>Namilyango College<br>Seeta, Mukono District<br>P.O. Box 72, Mukono, Uganda</p>
                 </div>
                 <div class="contact-item">
-                    <h4>Phone</h4>
+                    <h4><span class="contact-icon" aria-hidden="true">📞</span>Phone</h4>
                     <p>+256 312 350 800<br>+256 702 000 000</p>
                 </div>
                 <div class="contact-item">
-                    <h4>Email</h4>
+                    <h4><span class="contact-icon" aria-hidden="true">✉</span>Email</h4>
                     <p>info@namilyangocollege.ac.ug<br>admissions@namilyango<br>college.ac.ug</p>
                 </div>
+            </div>
+            <div class="map-wrapper">
+                <iframe
+                    title="Namilyango College location map"
+                    src="https://maps.google.com/maps?q=Namilyango%20College%20Seeta%20Mukono&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
         
@@ -141,6 +150,6 @@
         <p class="copyright">&copy; 2026 Namilyango College. All rights reserved.</p>
     </footer>
 
-    <script src="../JS/contact.js"></script>
+    <script src="JS/contact.js"></script>
 </body>
 </html>
