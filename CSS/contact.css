@@ -142,6 +142,16 @@ h2{
   display: block;
 }
 
+.first-page{
+  background: url(/IMAGES/background/contacts.jpg);
+}
+
+.first-page h2{
+  color: white;
+  margin: 0;
+  font-size: 35px;
+}
+
 
 
 /* Responsive Design */
