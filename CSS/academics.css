@@ -10,7 +10,7 @@ main{
     text-align:center
 }
 .hello{
-    background:linear-gradient(135deg, rgba(71, 103, 63, 0.7), rgba(20, 80, 40, 0.8)), url("../IMAGES/Hanlon.jpg") center/cover no-repeat;
+    background:linear-gradient(135deg, rgba(61, 135, 42, 0.3), rgba(25, 88, 46, 0.1)), url("../IMAGES/Hanlon.jpg") center/cover no-repeat;
     color:white;
     padding: 100px 20px;
 }

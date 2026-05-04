@@ -1,39 +1,23 @@
 
 
+
+.hello{
+    background: linear-gradient(rgba(20, 88, 42, 0.25), rgba(20, 88, 42, 0.25)),
+    url("../IMAGES/schoolGate.webp") center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    height: 300px;
+    border-bottom: 4px solid black;
+}
+
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 3rem 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.cards {
-    background: rgba(255, 255, 255, 0.95);
-    border: 2px solid rgba(18, 53, 36, 0.2);
-    border-radius: var(--radius);
-    padding: 2rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    backdrop-filter: blur(2px);
-    opacity: 0;
-    transform: translateY(40px) scale(0.96);
-    width: 100%;
-    box-sizing: border-box; 
-}
-
-.cards:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-    transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.98);
+  width: min(1120px, 92%);
+  margin-inline: auto;
 }
 
 h2 {
     color: var(--brand);
-    border-bottom: 3px solid #1f7a3a;
+    
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -42,17 +26,20 @@ h2 {
     text-align: center;
 }
 
-p {
+main p {
     font-size: 1rem;
+     margin-inline: 30px;
     line-height: 1.6;
     color: var(--ink);
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left:6px groove var(--brand);
+    border-right:6px groove var(--brand);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 main {
-    background: linear-gradient(rgba(20, 88, 42, 0.3), rgba(20, 88, 42, 0.45)), url(../IMAGES/schoolGate.webp) center/cover no-repeat fixed;
-    background-attachment: fixed;
+
     min-height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
@@ -65,16 +52,40 @@ main {
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-#vision {
-    justify-self: center;
+table {
+    width: 20px;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.performance-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 0.9rem 1rem;
+  border: 3px  solid #03180b;
+  text-align: center;
+}
+
+.performance-table th {
+  background: #87c499;
+  font-weight: 600;
+}
+
+.performance-table tr:nth-child(even) {
+  background: #5aac8b;
+}
+
+.performance-table tbody tr:last-child td {
+  border-bottom: 8px solid #164222;
 }
 
 @media (min-width: 900px) {
-    #vision {
-        grid-column: 1 / -1;
-        max-width: 540px;
-        width: 100%;
-    }
+    
     .card-container {
         grid-template-columns: repeat(2, minmax(0, 1fr))   ;
     }
@@ -93,3 +104,4 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
