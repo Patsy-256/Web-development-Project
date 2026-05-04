@@ -37,3 +37,18 @@ if (
   handleLevelChange();
   handleCombinationChange();
 }
+const form = document.getElementById("reg");
+const successModal = document.getElementById("success-modal");
+const closeModal = document.getElementById("close-modal");
+
+if (form && successModal && closeModal) {
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    successModal.classList.remove("hidden");
+  });
+
+  closeModal.addEventListener("click", function() {
+    successModal.classList.add("hidden");
+    form.reset();
+  });
+}
